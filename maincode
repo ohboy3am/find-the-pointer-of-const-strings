@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+
+
+char *str ="Merry Xmas!";
+
+int main(){
+
+
+  printf("%d", *(((int *)str++))); //only print 4 byte cause int
+
+  printf("%d", *(((int *)str++)));
+
+  printf("%d", *(((int *)str))); //print 3 times to get the intact pointers array
+
+
+  return 0;
+}
+
